@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1beta2
 kind: Template
 metadata:
-  name: github-repository
-  title: Github Repository
+  name: create-github-repository
+  title: Create Github Repository
   description: Create a github repository 
   tags:
     - recommended
