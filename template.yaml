@@ -1,9 +1,9 @@
 apiVersion: backstage.io/v1beta2
 kind: Template
 metadata:
-  name: create-python-application
-  title: Create a Python Application
-  description: Create a Python application with database
+  name: create-application
+  title: Create a Application
+  description: Create a application
   tags:
     - recommended
     - github
