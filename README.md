@@ -8,7 +8,7 @@
 - [x] Create a file catalog info [more details](https://backstage.io/docs/features/software-catalog/descriptor-format)
 - [ ] Create a application
 
-### To use this template add this in the `app-config.yaml`
+#### To use this template add this in the `app-config.yaml`
 
 ```yaml
 catalog:
