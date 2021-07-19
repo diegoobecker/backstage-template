@@ -13,10 +13,10 @@ spec:
   parameters:
     - title: Provide some simple information
       required:
-        - component_id
+        - name
         - owner
       properties:
-        component_id:
+        name:
           title: Name
           type: string
           description: Unique name of the component
@@ -50,7 +50,7 @@ spec:
       input:
         url: ./skeleton
         values:
-          name: '{{ parameters.component_id }}'
+          name: '{{ parameters.name }}'
           description: '{{ parameters.description }}'
           destination: '{{ parseRepoUrl parameters.repoUrl }}'
           owner: '{{ parameters.owner }}'
@@ -60,7 +60,7 @@ spec:
       action: publish:github
       input:
         allowedHosts: ['github.com']
-        description: 'This is {{ parameters.component_id }}'
+        description: 'This is {{ parameters.name }}'
         repoUrl: '{{ parameters.repoUrl }}'
 
     - id: register
