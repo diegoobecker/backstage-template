@@ -1,9 +1,9 @@
 apiVersion: backstage.io/v1beta2
 kind: Template
 metadata:
-  name: create-github-repository
-  title: Create Github Repository
-  description: Create a github repository 
+  name: create-python-application
+  title: Create a Python Application
+  description: Create a Python application with database
   tags:
     - recommended
     - github
@@ -30,12 +30,12 @@ spec:
           description: Owner of the component
           ui:field: OwnerPicker
           ui:options:
-            allowedKinds: 
+            allowedKinds:
               - Group
-    - title: Choose a location  
+    - title: Choose a location
       required:
         - repoUrl
-      properties: 
+      properties:
         repoUrl:
           title: Repository Location
           type: string
@@ -50,8 +50,8 @@ spec:
       input:
         url: ./skeleton
         values:
-          name: '{{ parameters.omponent_id }}'
-          description: '{{ parameters.description }}' 
+          name: '{{ parameters.component_id }}'
+          description: '{{ parameters.description }}'
           destination: '{{ parseRepoUrl parameters.repoUrl }}'
           owner: '{{ parameters.owner }}'
 
