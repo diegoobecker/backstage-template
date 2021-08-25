@@ -1,6 +1,6 @@
 # Backstage.io Template
 
-> This project is to create a template for backstage.io.
+> This project is to create a template for backstage.io  with GOCD pipeline.
 
 ### This template does:
 
